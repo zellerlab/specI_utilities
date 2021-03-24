@@ -16,3 +16,8 @@ Note that we fill in the missing levels (example: `NA Cyanobacteria class incert
 There are two possible issues:
 1. `NOT_SPECIES_ID` if the tax id is not at species level
 2. `NO_NCBI_ID` if the speciesID is not in the NCBI dump
+
+### `evaluate_clustering.py`
+Script that given a folder with different clusterings creates an evaluation table with precision, recall and f1_score. As input arguments it requires the path to the clustering files and the name of the evaluation table. Moreover, the script requires the installation of pandas and numpy. 
+```
+python evaluate_clustering.py path/to/clustering/files output_filename
